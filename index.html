@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="blackout">
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="header-container container">
@@ -24,13 +24,15 @@
             <span class="web">Web</span><span class="studio">Studio</span>
           </a>
           <ul class="site-nav">
-            <li class="item">
+            <li class="item fover">
               <a href="./index.html" class="link">Студія</a>
             </li>
-            <li class="item">
+            <li class="item fover">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <li class="item"><a href="#" class="link">Контакти</a></li>
+            <li class="item fover">
+              <a href="#" class="link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="auth-nav">
@@ -198,7 +200,7 @@
         <div class="services-container">
           <h3 class="title">Чим ми займаємося</h3>
           <ul class="services-blok">
-            <li>
+            <li class="title-img">
               <img
                 src="./images/1_1img.jpg"
                 alt="Програміст працюе за планшетом"
@@ -206,8 +208,11 @@
                 height="294"
                 class="img"
               />
+              <div class="block-title">
+                <h3 class="picture-title">Десктопні додатки</h3>
+              </div>
             </li>
-            <li>
+            <li class="title-img">
               <img
                 src="./images/1_2img.jpg"
                 alt="Людина з телефоном працюе за ноутбуком"
@@ -215,8 +220,11 @@
                 height="294"
                 class="img"
               />
+              <div class="block-title">
+                <h3 class="picture-title">Мобільні додатки</h3>
+              </div>
             </li>
-            <li>
+            <li class="title-img">
               <img
                 src="./images/1_3img.jpg"
                 alt="Людина малює на планшеті"
@@ -224,6 +232,9 @@
                 height="294"
                 class="img"
               />
+              <div class="block-title">
+                <h3 class="picture-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -629,5 +640,6 @@
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>
