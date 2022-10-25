@@ -88,7 +88,33 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>
+            Замовити послугу
+          </button>
+          <svg display="none">
+            <symbol id="icon-krestik" viewBox="0 0 32 32">
+              <path
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-miterlimit="1.5"
+                stroke-width="1.052"
+                d="M24.942 15.989a8.954 8.954 0 1 1-17.908 0 8.954 8.954 0 0 1 17.908 0z"
+              />
+              <path
+                d="M19.564 19.566a.747.747 0 0 0 0-1.055l-6.105-6.105a.747.747 0 0 0-1.055 1.055l6.105 6.105a.747.747 0 0 0 1.055 0z"
+              />
+              <path
+                d="M19.601 12.439a.747.747 0 0 0-1.055 0l-6.105 6.105a.747.747 0 0 0 1.055 1.055l6.105-6.105a.747.747 0 0 0 0-1.055z"
+              />
+            </symbol>
+          </svg>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="button-close" data-modal-close>
+                <span class="x">x</span>
+              </button>
+            </div>
+          </div>
         </section>
       </div>
       <!-- Переваги (Benefits)-->
@@ -640,6 +666,6 @@
         </div>
       </div>
     </footer>
-    <script src="./modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
