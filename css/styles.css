@@ -160,19 +160,28 @@ display: block;
 
 
 /* fover */
-.item.fover {
-position: relative;
-overflow: hidden;
+.poloska {
+    display: flex;
+    position: relative; 
+    overflow: hidden;
+
+    margin-right: 58px;
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .item.fover::before {
 position: absolute;
 margin: 0;
 padding: 0;
- content: "";
+content: "";
 width: 100%;
     height: 4px;
     top: 76px;
+
+    
+
 
     background: rgba(33, 150, 243, 0);
     border-radius: 2px;
@@ -181,7 +190,7 @@ width: 100%;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item.fover:hover::after {
+.poloska .link:hover::after {
     position: absolute;
     content: "";
     margin: 0;
