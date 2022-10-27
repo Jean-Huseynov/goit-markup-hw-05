@@ -407,12 +407,15 @@ position: absolute;
         padding: 6px;
 
         background: white;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        border: 1px solid rgb(117, 117, 117, 0.5);
 
         border-radius: 50%;
         transition-property: background-color;
         transition-duration: 200ms;
         transition-timing-function: linear;
+
+        transition: transform 250ms ease;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover {
@@ -424,12 +427,16 @@ position: absolute;
     border: 1px solid rgb(117, 117, 117, 0);;
 }
 
-.x {
-    color: #757575;
+.bcard-set-img {
+    width: 31px;
+    height: 31px;
+    padding: 0;
+    margin: 0;
+    fill: #757575;
 }
 
-.button-close:hover .x {
-color: #ffffff;
+.button-close:hover .bcard-set-img {
+fill: #ffffff;
 }
 
 
