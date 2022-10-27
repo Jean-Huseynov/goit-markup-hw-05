@@ -74,7 +74,7 @@ display: block;
 .nav-container .logo {
     display: flex;
     padding: 24px 0px;
-    margin-right: 93px;
+    margin: 0;
 }
 
 
@@ -165,11 +165,14 @@ display: block;
     position: relative; 
     overflow: hidden;
 
-    margin-right: 58px;
+    margin-left: 50px;
     transition: transform 250ms ease;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+  .poloska:first-child {
+    margin-left: 93px;
+}
 
 .item.fover::before {
 position: absolute;
