@@ -173,7 +173,7 @@ transition-property: color, cursor;
 
 
 /* fover */
-.poloska .link::before {
+.current::before {
     position: absolute;
     margin: 0;
     padding: 0;
@@ -190,7 +190,8 @@ transition-property: color, cursor;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.poloska .link:hover::after {
+.current:hover::after,
+.current:focus::after {
     position: absolute;
     content: "";
     margin: 0;
